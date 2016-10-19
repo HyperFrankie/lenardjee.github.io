@@ -10,6 +10,7 @@
 
 </head>
 <body>
+    <!-- Hier dit <script>-element laten staan, anders werkt het niet! -->
    <script src="https://cdn.rawgit.com/DarkShadowTNT/schoolproject/master/prism.js"></script>
    <ul class="mainNavigationBar" id="mainNavBar">
        <li><a href="/">Home</a></li>
@@ -40,8 +41,15 @@
 &lt;/body>            
 </code></pre>
             <p>Dit is in principe het begin van een website; het gebruiken van een <code>head</code>-element en een <code>body</code>-element. Tussen het <code>head</code>-element kan <i>meta</i>data worden gebruikt - die bepalen bijvoorbeeld wat voor karakterset wordt gebruikt, of, in dit geval, de titel van de pagina die in het tabblad wordt gebruikt. In het <code>body</code>-element wordt de eigenlijke website gemaakt. Hier wordt, in dit geval, het element <code>p</code> gebruikt. Dit staat voor een alinea.</p>
-            <p>Zoals te zien kan het &lt;head&gt; deel gebruikt worden om een titel van de pagina te laten zien helemaal bovenaan, boven de url-balk. Verder kan het &lt;head&gt; deel ook gebruikt worden om allerlei soorten bestanden op te vragen van verschillende plaatsen. Zo hebben wij bijvoorbeeld in onze code dit stukje in her &lt;head&gt; deel:</p>
-            <p>&#x2063;<c2_a>&lt;link</c2_a><code_a> rel=</code_a><c3_a>"stylesheet"</c3_a><code_a> type=</code_a><c3_a>"text/css"</c3_a> <code_a>href=</code_a><c3_a>"https://rawgit.com/DarkShadowTNT/schoolproject/master/resources.css"</c3_a><c2_a>&gt;</c2_a></p>
+            <p>Hieronder staat een voorbeeld van wat er ook in het <code>head</code>-element geplaatst kan worden, in dit geval een link naar een <a href="/css">CSS-bestand</a> van deze website. Merk op dat er bij het element <code>link</code> geen sluitende tag (<code>&lt;/link></code>) gebruikt hoeft te worden.</p>
+            <!-- AUB zo laten staan -->
+<pre><code class="language-markup">
+&lt;link rel="stylesheet" type= "text/css" href="https://rawgit.com/DarkShadowTNT/schoolproject/master/resources.css">
+</code></pre>
+            <p>Ook kunnen er in <code>head</code> scriptbestanden worden geplaatst, in het geval hieronder naar een <a href="/javascript">JavaScript-bestand</a> van de website. Merk op dat er hier wel een sluitende tag wordt gebruikt (<code>&lt;/script></code>).</p>
+<pre><code class="language-markup">
+<script src="https://rawgit.com/DarkShadowTNT/schoolproject/master/resources.js"></script>
+</code></pre>
         </div>
     </div>
     <div class="footer">

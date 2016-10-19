@@ -6,6 +6,8 @@
     <link rel="icon" type="text/x-icon" href="https://raw.githubusercontent.com/DarkShadowTNT/schoolproject/master/icon.png">
     <script src="https://cdn.rawgit.com/HubSpot/pace/v1.0.0/pace.min.js"></script>
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/DarkShadowTNT/schoolproject/master/loading.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/DarkShadowTNT/schoolproject/master/prism.css">
+    <script src="https://cdn.rawgit.com/DarkShadowTNT/schoolproject/master/prism.js"></script>
 </head>
 <body>
    <ul class="mainNavigationBar" id="mainNavBar">
@@ -27,12 +29,18 @@
         <div class="serif">
             <p>HTML code geeft de opbouw van de site weer zoals wij hem zien. De code werkt met een basis opbouw die elke pagina heeft die gemaakt is met HTML:</p>
             <hr class="blue">
-            <p>&#x2063;<c2>&lt;head&gt;</c2><br><c2 style="color=green">&#x2063; &#x2063; &lt;title&gt;</c2><code>Paginatitel</code><c2>&lt;/title&gt;</c2><br><c2 style="color=green">&lt;/head&gt;</c2><br><c2 style="color=green">&lt;body&gt;</c2><br><c2 style="color=green">&#x2063; &#x2063; &lt;p&gt;</c2><code>Dit is text.</code><c2>&lt;/p&gt;</c2><br><c2 style="color=green">&lt;/body&gt;</c2>
-            <h2>De indeling van <a style="color=green">&lt;head&gt;</a> en <a style="color=green">&lt;body&gt;</a></h2>
+            <!-- AUB zo laten staan -->
+<pre><code class="language-markup">
+<head>
+    <title>Paginatitel</title>
+</head>
+<body>
+    <p>Dit is tekst</p>
+</body>            
+</code></pre>
+            <p>Dit is in principe het begin van een website; het gebruiken van een <code>head</code>-element en een <code>body</code>-element. Tussen het <code>head</code>-element kan <i>meta</i>data worden gebruikt - die bepalen bijvoorbeeld wat voor karakterset wordt gebruikt, of, in dit geval, de titel van de pagina die in het tabblad wordt gebruikt. In het <code>body</code>-element wordt de eigenlijke website gemaakt. Hier wordt, in dit geval, het element <code>p</code> gebruikt. Dit staat voor een alinea.</p>
             <p>Zoals te zien kan het &lt;head&gt; deel gebruikt worden om een titel van de pagina te laten zien helemaal bovenaan, boven de url-balk. Verder kan het &lt;head&gt; deel ook gebruikt worden om allerlei soorten bestanden op te vragen van verschillende plaatsen. Zo hebben wij bijvoorbeeld in onze code dit stukje in her &lt;head&gt; deel:</p>
             <p>&#x2063;<c2_a>&lt;link</c2_a><code_a> rel=</code_a><c3_a>"stylesheet"</c3_a><code_a> type=</code_a><c3_a>"text/css"</c3_a> <code_a>href=</code_a><c3_a>"https://rawgit.com/DarkShadowTNT/schoolproject/master/resources.css"</c3_a><c2_a>&gt;</c2_a></p>
-            <p></p>
-            <p></p>
         </div>
     </div>
     <div class="footer">

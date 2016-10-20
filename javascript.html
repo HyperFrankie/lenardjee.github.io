@@ -1,4 +1,5 @@
 <head>
+    <title>JavaScript || Schoolproject informatica</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="https://rawgit.com/DarkShadowTNT/schoolproject/master/resources.css">
     <script src="https://rawgit.com/DarkShadowTNT/schoolproject/master/resources.js"></script>
@@ -25,11 +26,29 @@
     <hr>
         <div class="serif">
             <p>JavaScript kan gebruikt worden voor de interactie met een website. Vanwege dit - en het feit dat het afstamt van de programmeertaal C - is deze programmeertaal iets lastiger om te leren.</p>
-            <p>WIU...</p>
-            <p></p>
-            <p></p>
-            <p></p>
-            <p></p>
+            <p>De bestandsextensie voor Javascript is <code class="code">.js</code></p>
+            <h2>JavaScript-voorbeeld</h2>
+            <p>Het bekende 'Hallo, wereld!' ziet er bij JavaScript het volgt uit:</p>
+<pre class="line-numbers"><code class="language-javascript">
+alert('Hallo, wereld!')
+</code></pre>
+            <p>Dit is nog een van de meer simpelere scripts die kunnen worden gemaakt in JavaScript. Dingen kunnen echter snel ingewikkeld worden, zoals hieronder ook te zien. Dit stuk script komt uit het document dat onderdeel is van de navigatiebalk aan de bovenkant van de pagina.</p>
+<pre class="line-numbers"><code class="language-javascript">
+function smallScreens() {
+    var x = document.getElementById("mainNavBar");
+    if (x.className === "mainNavigationBar") {
+        x.className += " responsive";
+    } else {
+        x.className = "mainNavigationBar"
+    }
+}
+</code></pre>
+            <p>In het voorbeeld hierboven kunnen duidelijk overeenkomsten gezien worden met een andere programmeertaal, namelijk <a href="https://nl.wikipedia.org/wiki/C_(programmeertaal)">C</a>. Hierdoor is het ook een van de moeilijkere programmeertalen om te leren.</p>
+            <h2>JavaScript-document toevoegen aan HTML-pagina</h2>
+            <p>Om een JavaScript-bestand toe te voegen aan HTML, kan de volgende code gebruikt worden:</p>
+<pre class="line-numbers"><code class="language-markup">
+&lt;script src="pad_naar_javascript-bestand">&lt;/script>
+</code></pre>
         </div>
     </div>
     <div class="footer">

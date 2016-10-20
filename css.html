@@ -34,10 +34,24 @@
             <p>Met CSS is het mogelijk om het uiterlijk van alle beschikbare HTML-elementen aan te passen. Ook kunnen er met CSS verschillende klassen worden aangepast en gecreëerd. Met het aanpassen kan er gedacht worden aan de achtergrondkleur, het lettertype en -grootte, randen, animaties (in de meest recente versie) en nog een aantal andere dingen.</p>
             <h2>Hoe kan een CSS-bestand in een HTML-bestand worden gezet?</h2>
             <p>Dit door het volgende in te voeren:
-<pre class="line-numbers"><code class="language-css">
+<pre class="line-numbers"><code class="language-markup">
 &lt;link rel="stylesheet" type="text/css" href="url_naar_css-bestand">
 </code></pre>
-            <p></p>
+            <p>Een CSS-bestand kan er het volgt uitzien:</p>
+<pre class="line-numbers"><code class="language-css">
+body /* Elementnaam */ {
+    background-color: #FFFFFF; /* Achtergrondkleur */
+    font-face: "Trebuchet MS", Helvetica, sans-serif; /* Te gebruiken lettertypen, aangeraden wordt om met het/de gewenste lettertype(n) te beginnen en eindigen met 'sans-serif', 'serif' of 'monospace' */
+    color: #252525; /* Tekstkleur */
+}
+
+.blauw /* Naam voor een klasse */ {
+    background-color: blue; /* Engelse naam voor de kleur #0000FF (blauw) */
+    width: 80%; /* Breedte van het element */
+    color: #FFFFFF; /* Kleur van de tekst, overschrijft de eerder benoemde #252525 */
+    border: 1px solid #FFFFFF; /* Voor een doorlopende rand aan alle kanten van één pixel breed in de kleur wit (#FFFFFF) */
+}
+</code></pre>
             <p></p>
         </div>
     </div>

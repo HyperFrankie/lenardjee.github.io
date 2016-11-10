@@ -17,8 +17,21 @@
             background-color: #FFFFFF;
         }
         .pas-selectie-aan::selection {
-            background: #10A90B !important;
+            background: #149CBE !important;
             color: #FFFFFF !important;
+        }
+        .animatie {
+            width: 95%;
+            height: 25px;
+            background-color: #FFFFFF;
+            color: #000000;
+            transition-duration: 5.0s;
+            font-size: 10px;
+        }
+        .animatie:hover {
+            background-color: #000000;
+            color: #FFFFFF;
+            font-size: 20px;
         }
     </style>
 </head>
@@ -52,16 +65,16 @@ body {
     #10A90B= background-color;
 }
 </code></pre>
-          <p>In de bovenstaande voorbeelden wordt een eigenschap (<code>#10A90B</code>) vóór een <i>property</i> (<code>background-color</code>) gezet. Dit gaat niet werken.</p>       
+          <p>In de bovenstaande voorbeelden wordt een eigenschap (<code class="code">#10A90B</code>) vóór een <i>property</i> (<code class="code">background-color</code>) gezet. Dit gaat niet werken.</p>       
           <h3>WEL</h3>
 <pre class="line-numbers"><code class="language-css">
 body {
     background-color: #10A90B;
 }
 </code></pre>
-          <p>In het bovenstaande voorbeeld wordt een <i>property</i> (<code>background-color</code>) vóór een eigenschap gezet (<code>#10A90B</code>). Dit werkt wel.</p>
+          <p>In het bovenstaande voorbeeld wordt een <i>property</i> (<code class="code">background-color</code>) vóór een eigenschap gezet (<code class="code">#10A90B</code>). Dit werkt wel.</p>
           <p>(<a onclick="changeBackground('#10A90B')" style="cursor:pointer">toon</a>&nbsp;|&nbsp;<a onclick="changeBackground('#C9E7DF')" style="cursor:pointer">terugdraaien</a>)</p>
-          <h2>Selectiekleur</h2>
+          <h2>Selectiekleur en het aanmaken van een klasse</h2>
 <pre class="line-numbers"><code class="language-css">
 .pas-selectie-aan {
   height: 150px;
@@ -71,7 +84,7 @@ body {
 }
 
 .pas-selectie-aan::selection {
-  background: #10A90B;
+  background: #149CBE;
   color: #FFFFFF;
 }
 </code></pre>
@@ -84,6 +97,33 @@ body {
             <p>om vervolgens dit te maken:</p>
             <div class="pas-selectie-aan">
                 <p>Dit is testtekst. Enkel ter demonstratie.</p>
+            </div>
+            <h2>Simpele animaties</h2>
+<pre class="line-numbers"><code class="language-css">
+.animatie {
+  width: 95%;
+  height: 25px;
+  background-color: #FFFFFF;
+  color: #000000;
+  transition-duration: 5.0s;
+  font-size: 10px;
+}
+
+.animatie:hover {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-size: 20px;
+}
+</code></pre>
+            <p>wordt gebruikt in</p>
+<pre class="line-numbers"><code class="language-markup">
+&lt;div class="animatie"&gt;
+  &lt;p&gt;Dit is testtekst. Enkel ter demonstratie.&lt;/p&gt;
+&lt;/div&gt;
+</code></pre>
+            <p>om vervolgens dit te maken:</p>
+            <div class="animatie">
+                <p>Het element wordt zwart en de tekst wordt wit als de muis erop geplaatst wordt.</p>
             </div>
         </div>
     </div>
